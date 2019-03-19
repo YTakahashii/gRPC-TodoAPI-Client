@@ -300,7 +300,7 @@ proto.Proto.Todo.Todo.prototype.getId = function() {
 
 /** @param {string} value */
 proto.Proto.Todo.Todo.prototype.setId = function(value) {
-  jspb.Message.setField(this, 1, value);
+  jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -315,7 +315,7 @@ proto.Proto.Todo.Todo.prototype.getName = function() {
 
 /** @param {string} value */
 proto.Proto.Todo.Todo.prototype.setName = function(value) {
-  jspb.Message.setField(this, 2, value);
+  jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -332,7 +332,7 @@ proto.Proto.Todo.Todo.prototype.getIscomplete = function() {
 
 /** @param {boolean} value */
 proto.Proto.Todo.Todo.prototype.setIscomplete = function(value) {
-  jspb.Message.setField(this, 3, value);
+  jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -475,15 +475,15 @@ proto.Proto.Todo.GetTodoItemsResponse.serializeBinaryToWriter = function(message
 
 /**
  * repeated Todo todos = 1;
- * @return {!Array.<!proto.Proto.Todo.Todo>}
+ * @return {!Array<!proto.Proto.Todo.Todo>}
  */
 proto.Proto.Todo.GetTodoItemsResponse.prototype.getTodosList = function() {
-  return /** @type{!Array.<!proto.Proto.Todo.Todo>} */ (
+  return /** @type{!Array<!proto.Proto.Todo.Todo>} */ (
     jspb.Message.getRepeatedWrapperField(this, proto.Proto.Todo.Todo, 1));
 };
 
 
-/** @param {!Array.<!proto.Proto.Todo.Todo>} value */
+/** @param {!Array<!proto.Proto.Todo.Todo>} value */
 proto.Proto.Todo.GetTodoItemsResponse.prototype.setTodosList = function(value) {
   jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
@@ -642,7 +642,7 @@ proto.Proto.Todo.GetTodoItemRequest.prototype.getId = function() {
 
 /** @param {string} value */
 proto.Proto.Todo.GetTodoItemRequest.prototype.setId = function(value) {
-  jspb.Message.setField(this, 1, value);
+  jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -943,7 +943,7 @@ proto.Proto.Todo.PostTodoItemRequest.prototype.getName = function() {
 
 /** @param {string} value */
 proto.Proto.Todo.PostTodoItemRequest.prototype.setName = function(value) {
-  jspb.Message.setField(this, 1, value);
+  jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1562,7 +1562,7 @@ proto.Proto.Todo.DeleteTodoItemRequest.prototype.getId = function() {
 
 /** @param {string} value */
 proto.Proto.Todo.DeleteTodoItemRequest.prototype.setId = function(value) {
-  jspb.Message.setField(this, 1, value);
+  jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
